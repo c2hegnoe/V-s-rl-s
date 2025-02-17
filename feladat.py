@@ -44,7 +44,13 @@ def minesmax(tmp):
     print("Legnagyobb vásárlás:", maxszam, "Ft.")
     print("Legkisebb vásárlás:", minszam, "Ft.")
 
+def Szum(tmp):
+    szum = 0
+    for nap in tmp:
+        nap = int(nap)
+        szum += nap
 
+    print("Összes költés:", szum, "Ft.")
 
 
 f.close()
@@ -52,4 +58,5 @@ napok(tmp)
 nullakoltes(tmp)
 atlagkoltes(tmp)
 minesmax(tmp)
+Szum(tmp)
 
