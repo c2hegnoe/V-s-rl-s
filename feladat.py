@@ -13,9 +13,16 @@ def napok(tmp):
 def nullakoltes(tmp):
     nullaKoltes=0
     for nap in tmp:
-        if nap == 0:
+        if nap == "0":
             nullaKoltes += 1
     print("Ennyi napon nem történt költés: ", nullaKoltes)
+
+def atlagkoltes(tmp):
+    szum = 0
+    for nap in tmp:
+        nap = int(nap)
+        szum += nap
+    print("Napi átlagköltés: ", szum(len(tmp)), "Ft")
 
 f.close()
 napok(tmp)
